@@ -74,3 +74,23 @@ function resetImageSize() {
 document.getElementById('obrazek').addEventListener('mouseover', enlargeImage);
 document.getElementById('obrazek').addEventListener('mouseout', resetImageSize);
 
+
+const list = document.getElementById('list');
+const manager = document.getElementById('manager');
+const addTaskButton = document.getElementById('buttontask');
+
+buttontask.addEventListener('click', function() {
+    const taskText = manager.value.trim();
+    if (!taskText) return; // Pokud je text prázdný, neprovede se nic
+
+    const taskItem = document.createElement('li');
+    taskItem.textContent = taskText;    
+    
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Odstranit';
+    removeButton.addEventListener('click', () => taskItem.remove()); // Používáme taskItem.remove() místo removeChild
+
+    taskItem.appendChild(removeButton);
+    list.appendChild(taskItem);
+    manager.value = ''; // Vymažeme vstup po přidání úkolu
+});

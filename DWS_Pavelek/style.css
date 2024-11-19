@@ -1,83 +1,49 @@
-#u1{
-    font-size: 25px;
-}
-
-#u2{
-    font-size: 25px;
-}
-
-#u2{
-    font-size: 25px;
-}
-
-#u3{
-    font-size: 25px;
-}
-
-#u4{
-    font-size: 25px;
-}
-
-#u5{
-    font-size: 25px;
-}
-
-#u6{
-    font-size: 25px;
-}
-
-#u7{
-    font-size: 25px;
-}
-
-#u8{
-    font-size: 25px;
-}
-
-#u9{
-    font-size: 25px;
-}
-
-#first{
-    color: darkblue;
-    background-color: violet;
-}
-
-#second{
-    color: rosybrown;
-    background-color: aquamarine;
-}
-
-#third{
-    color: azure;
-    background-color: turquoise;
-}
-
-#fourth{
-    color: brown;
-    border-color: black;
-}
-
-#fifth{
-    color: yellow;
-    background-color: blueviolet;
-}
-
-#hovertext{
-    color: pink;
-}
-
-#buttonTime{
-    color: aqua;
-    background-color: darkgreen;
-}
-
-#buttonDate{
-    color: forestgreen;
-    background-color: brown;
-}
-
 #obrazek{
     height: 225x;
     width: 225px;
+}
+
+/* Základní design stránky */
+body {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12 {
+    color: black;
+
+}
+
+button {
+    background-color: turquoise;
+    color: white;
+    padding: 10px ;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+#list li button {
+    background-color: turquoise;
+    margin-left: 10px;
+}
+
+#list li button:hover {
+    background-color: black;
+}
+
+
+ul {
+    margin-top: 20px;
 }
